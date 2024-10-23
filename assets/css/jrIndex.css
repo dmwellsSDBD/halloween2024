@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: linear-gradient(#1c0125, #1c0125aa);
+    background-image: linear-gradient(to bottom right, #1c0125, #1c0125ba);
     height: 100vh;
 }
 
@@ -55,3 +55,52 @@ a {
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
 }
+
+/*------- Responsive Images  -------------*/
+img {
+    width: 100%;
+}
+
+/*------ Tablet Media Query---------------*/
+@media screen and (min-width: 769px) {
+
+    .header,
+    .main-nav {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        .header {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+
+}
+/*---------- End of Tablet Media Query ---------*/
+
+
+/*-------- Desktop Media Query -----------------*/
+@media screen and (min-width: 1025px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+/*--------End Desktop Media Query --------------*/
+
+/*-------- Large Display Media Query -----------------*/
+@media screen and (min-width: 1850px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+
+}
+/*--------End Large Display Media Query --------------*/
