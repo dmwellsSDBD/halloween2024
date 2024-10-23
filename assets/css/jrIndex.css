@@ -1,9 +1,20 @@
 /******  Fonts ***************************
       Use Google Fonts
+font-family: "Barrio", system-ui;
+font-family: "Nosifer", sans-serif;
+font-family: "Butcherman", system-ui;
+font-family: "Rubik Wet Paint", system-ui;
+font-family: "Amatic SC", sans-serif;
 ******************* End Fonts ***********/
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barrio&family=Butcherman&family=Nosifer&family=Rubik+Wet+Paint&display=swap');
 /******  Color Palette *******************
       Use coolors.co
+3c596c - Dark Blue 1
+42596a - Dark Blue 2
+577a8e - Light Blue
+0e0d0a - Almost Black
+fbbf31 - Yellow/orange
+BF3100 - blood
 *************** End Color Palette *******/
 
 * {
@@ -14,7 +25,8 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #1c0125, #1c0125ba);
+    font-family: "Amatic SC", sans-serif;
+    background-image: linear-gradient(to bottom right, #3c596c, #42596aba);
     height: 100vh;
 }
 
@@ -23,15 +35,15 @@ ul {
 }
 
 a {
-    color: #fff;
+    color: #0e0d0a;
     text-decoration: none;
 }
 
 .logo {
     margin: 0;
     font-size: 1.45em;
-    color: #fff;
-
+    color: #BF3100;
+    font-family: "Nosifer", sans-serif;
 }
 
 .main-nav {
@@ -47,22 +59,37 @@ a {
 }
 
 .main-nav a {
-    color: #96E194;
-    font-size: .99em;
+    color: #42596a;
+    font-size: 1.3em;
+    font-family: "Barrio", system-ui;
 }
 
 .main-nav a:hover {
     color: #FF9505;
 }
 
+.logo a {
+    color: #BF3100;
+}
+
 .header {
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid #FF9505;
-    background-color: #FF950588;
+    background-color: #fbbf31;
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
 }
+
+#hero {
+    background-image: url(../img/2151827517.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    min-height: 800px;
+}
+
+/****** Add Heading inside a flexbox *******/
 
 /*------- Responsive Images  -------------*/
 img {
