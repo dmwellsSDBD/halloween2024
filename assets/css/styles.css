@@ -226,7 +226,9 @@ button{
 }
 
 /* Change background header */
-
+.scroll-header {
+  background: var(--container-color);
+}
 
 /* Active link */
 
@@ -391,10 +393,48 @@ button{
 
 
 /*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 2rem;
+}
 
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: var(--mb-2);
+}
+
+.about__img {
+  width: 200px;
+  justify-self: center;
+}
 
 /*=============== TRICK OR TREAT ===============*/
+.trick__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
 
+.trick__content {
+  position: relative;
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  overflow:hidden;
+}
+
+.trick__img {
+  width: 90px;
+  transition: .3s
+}
+
+.trick__subtitle,
+.trick__price {
+  display: block;
+}
 
 /*=============== DISCOUNT ===============*/
 
