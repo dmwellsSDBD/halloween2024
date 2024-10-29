@@ -158,7 +158,8 @@ img {
     box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
 }
 
-.block_one img {
+.block_one img,
+.block_five img {
     width: 25%;
 }
 
@@ -221,7 +222,26 @@ img {
 
 .five {
     min-height: 250px;
-    background-color:#FF9505;
+    background-color: #3c596c;
+    color: #fff;
+}
+
+.poem {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.poem h2 {
+    margin-bottom: 0;
+    font-size: 2.5em;
+    color:#BF3100;
+}
+
+.poem cite {
+    color:#fbbf31;
+    font-size: .8em;
+    margin-top: 0;
 }
 
 .six {
@@ -387,8 +407,24 @@ img {
 
 footer {
     margin-top: 0;
-    padding: 10%;
     background-color: #FF9505;
     color: #0e0d0a;
     min-height: 300px;
+    padding: 3%;
+}
+
+footer .copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 300px;
+    align-items: center;
+}
+
+.copy p {
+    font-size: 2em;
+}
+
+.copy img {
+    width: 250px;
 }
