@@ -85,10 +85,10 @@ a {
     width: 100%;
     padding-top: .5em;
     padding-bottom: .5em;
-    border: 1px solid #FF9505;
+    border-bottom: 1px solid #BF3100;
     background-color: #fbbf31cc;
     box-shadow: 0px 0px 150px 0px rgba(173, 62, 37, 1);
-    border-radius: 5px;
+    border-radius: 0 0 20px 20px;
     z-index: 100;
 }
 
@@ -444,10 +444,14 @@ img {
 
 footer {
     margin-top: 0;
-    background-color: #FF9505;
+    background-color: #FF9505aa;
+    border-bottom: 1px solid #BF3100;
+    box-shadow: 150px 0px 0px 0px rgba(173, 62, 37, 1);
+    border-radius: 20px 20px 0 0;
     color: #0e0d0a;
     min-height: 300px;
     padding: 3%;
+    z-index: 101;
 }
 
 footer .copy {
