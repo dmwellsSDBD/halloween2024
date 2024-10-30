@@ -45,6 +45,15 @@ a {
     text-decoration: none;
 }
 
+/* Hide .header on mobile, display .ham-menu */
+.header {
+    display: none;
+}
+
+.mobile {
+    display:block;
+}
+
 .logo {
     margin: 0;
     font-size: 1em;
@@ -56,14 +65,6 @@ a {
     display:none;
     margin-top: 5px;
 }
-
-.hamburger {
-    display: block;
-}
-
-/* .main-nav {
-    display: block;
-} */
 
 .logo a {
     text-align: center;
@@ -83,7 +84,8 @@ a {
     color: #FF9505;
 }
 
-.main-nav {
+/* .main-nav */
+.off-screen-menu {
     background-color: #ffffffcc;
     height: 100vh;
     width: 100%;
@@ -100,14 +102,15 @@ a {
     transition: .3s ease,
 }
 
-.main-nav.active {
+/* .main-nav */
+.off-screen-menu.active {
     right: 0;
 }
 
 nav {
     padding: 1rem;
     display: flex;
-    background-color:rgba(173, 62, 37, 1);
+    background-color:#fbbf31;
 }
 
 .ham-menu {
@@ -138,7 +141,7 @@ nav {
 }
 
 .ham-menu.active span:nth-child(1) {
-    top:50%;
+    top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -147,7 +150,7 @@ nav {
 }
 
 .ham-menu.active span:nth-child(3) {
-    top:50%;
+    top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -399,6 +402,16 @@ footer .copy {
      Tablet Media Query
 +++++++++++++++++++++++++++---------------*/
 @media screen and (min-width: 769px) {
+
+    /* Hide .ham-menu on tablet and larger, display .header */
+    .header {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
 
     .header,
     .main-nav {
