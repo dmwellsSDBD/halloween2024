@@ -57,19 +57,23 @@ a {
     margin-top: 5px;
 }
 
+.hamburger {
+    display: block;
+}
+
 /* .main-nav {
     display: block;
 } */
 
-.logo a,
+.logo a {
+    text-align: center;
+}
+
 .main-nav a {
     padding: 10px 15px;
     text-transform: uppercase;
     text-align: center;
     display: block;
-}
-
-.main-nav a {
     color: #42596a;
     font-size: 1.3em;
     font-family: "Barrio", system-ui;
@@ -77,6 +81,74 @@ a {
 
 .main-nav a:hover {
     color: #FF9505;
+}
+
+.main-nav {
+    background-color: #ffffffcc;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease,
+}
+
+.main-nav.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color:rgba(173, 62, 37, 1);
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color:#42596a;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3 ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top:50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .logo a {
@@ -331,6 +403,10 @@ footer .copy {
     .header,
     .main-nav {
         display: flex;
+    }
+    
+    .hamburger {
+        display: none;
     }
 
     .header {
